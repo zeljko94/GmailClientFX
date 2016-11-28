@@ -1,0 +1,44 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.background {
+    -fx-background-color: #03A9F4;
+}
+
+.label
+{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 25px;
+}
+
+.button
+{
+    -fx-background-color: #0288D1;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.button:hover{
+    -fx-background-color: #B3E5FC;
+}
+
+.text-input
+{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 10px;
+    -fx-prompt-text-fill: #727272;
+    -fx-background-color: #03A9F4;
+}
+
+.text-input:focused
+{
+    -fx-border-color:#FFF;
+    -fx-border-width:0 0 2px 0;
+}
+
+.tijeloPoruke
+{
+    -fx-text-fill: black;
+}

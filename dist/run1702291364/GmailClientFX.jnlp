@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GmailClientFX.jnlp">
+  <information>
+    <title>GmailClientFX</title>
+    <vendor>zeljko94</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GmailClientFX.jar" size="112308" download="eager" />
+    <jar href="lib\commons-email-1.4-javadoc.jar" size="186330" download="eager" />
+    <jar href="lib\commons-email-1.4.jar" size="51239" download="eager" />
+    <jar href="lib\commons-logging-1.1.1-sources.jar" size="74976" download="eager" />
+    <jar href="lib\commons-logging-1.1.1.jar" size="60686" download="eager" />
+    <jar href="lib\commons-validator-1.4.0.jar" size="176897" download="eager" />
+    <jar href="lib\google-api-client-1.21.0-sources.jar" size="190521" download="eager" />
+    <jar href="lib\google-api-client-1.21.0.jar" size="195118" download="eager" />
+    <jar href="lib\google-api-client-android-1.21.0-sources.jar" size="10895" download="eager" />
+    <jar href="lib\google-api-client-android-1.21.0.jar" size="10297" download="eager" />
+    <jar href="lib\google-api-client-appengine-1.21.0-sources.jar" size="9832" download="eager" />
+    <jar href="lib\google-api-client-appengine-1.21.0.jar" size="9867" download="eager" />
+    <jar href="lib\google-api-client-gson-1.21.0-sources.jar" size="3444" download="eager" />
+    <jar href="lib\google-api-client-gson-1.21.0.jar" size="2651" download="eager" />
+    <jar href="lib\google-api-client-jackson2-1.21.0-sources.jar" size="3494" download="eager" />
+    <jar href="lib\google-api-client-jackson2-1.21.0.jar" size="2693" download="eager" />
+    <jar href="lib\google-api-client-java6-1.21.0-sources.jar" size="3256" download="eager" />
+    <jar href="lib\google-api-client-java6-1.21.0.jar" size="2324" download="eager" />
+    <jar href="lib\google-api-client-protobuf-1.21.0-sources.jar" size="10245" download="eager" />
+    <jar href="lib\google-api-client-protobuf-1.21.0.jar" size="10640" download="eager" />
+    <jar href="lib\google-api-client-servlet-1.21.0-sources.jar" size="7601" download="eager" />
+    <jar href="lib\google-api-client-servlet-1.21.0.jar" size="6552" download="eager" />
+    <jar href="lib\google-api-client-xml-1.21.0-sources.jar" size="11929" download="eager" />
+    <jar href="lib\google-api-client-xml-1.21.0.jar" size="10368" download="eager" />
+    <jar href="lib\google-api-services-gmail-v1-rev40-1.21.0-javadoc.jar" size="3333612" download="eager" />
+    <jar href="lib\google-api-services-gmail-v1-rev40-1.21.0-sources.jar" size="320024" download="eager" />
+    <jar href="lib\google-api-services-gmail-v1-rev40-1.21.0.jar" size="88425" download="eager" />
+    <jar href="lib\google-http-client-1.21.0-sources.jar" size="266221" download="eager" />
+    <jar href="lib\google-http-client-1.21.0.jar" size="284566" download="eager" />
+    <jar href="lib\google-http-client-android-1.21.0-sources.jar" size="10522" download="eager" />
+    <jar href="lib\google-http-client-android-1.21.0.jar" size="12011" download="eager" />
+    <jar href="lib\google-http-client-appengine-1.21.0-sources.jar" size="10768" download="eager" />
+    <jar href="lib\google-http-client-appengine-1.21.0.jar" size="15512" download="eager" />
+    <jar href="lib\google-http-client-gson-1.21.0-sources.jar" size="6261" download="eager" />
+    <jar href="lib\google-http-client-gson-1.21.0.jar" size="8496" download="eager" />
+    <jar href="lib\google-http-client-jackson-1.21.0-sources.jar" size="5332" download="eager" />
+    <jar href="lib\google-http-client-jackson-1.21.0.jar" size="5994" download="eager" />
+    <jar href="lib\google-http-client-jackson2-1.21.0-sources.jar" size="5482" download="eager" />
+    <jar href="lib\google-http-client-jackson2-1.21.0.jar" size="6671" download="eager" />
+    <jar href="lib\google-http-client-jdo-1.21.0-sources.jar" size="4438" download="eager" />
+    <jar href="lib\google-http-client-jdo-1.21.0.jar" size="11225" download="eager" />
+    <jar href="lib\google-http-client-protobuf-1.21.0-sources.jar" size="6184" download="eager" />
+    <jar href="lib\google-http-client-protobuf-1.21.0.jar" size="5167" download="eager" />
+    <jar href="lib\google-http-client-xml-1.21.0-sources.jar" size="25125" download="eager" />
+    <jar href="lib\google-http-client-xml-1.21.0.jar" size="27629" download="eager" />
+    <jar href="lib\google-oauth-client-1.21.0-sources.jar" size="67250" download="eager" />
+    <jar href="lib\google-oauth-client-1.21.0.jar" size="61112" download="eager" />
+    <jar href="lib\google-oauth-client-appengine-1.21.0-sources.jar" size="11724" download="eager" />
+    <jar href="lib\google-oauth-client-appengine-1.21.0.jar" size="7935" download="eager" />
+    <jar href="lib\google-oauth-client-java6-1.21.0-sources.jar" size="11151" download="eager" />
+    <jar href="lib\google-oauth-client-java6-1.21.0.jar" size="10775" download="eager" />
+    <jar href="lib\google-oauth-client-jetty-1.21.0-sources.jar" size="4442" download="eager" />
+    <jar href="lib\google-oauth-client-jetty-1.21.0.jar" size="5801" download="eager" />
+    <jar href="lib\google-oauth-client-servlet-1.21.0-sources.jar" size="21287" download="eager" />
+    <jar href="lib\google-oauth-client-servlet-1.21.0.jar" size="15137" download="eager" />
+    <jar href="lib\gson-2.1-sources.jar" size="124849" download="eager" />
+    <jar href="lib\gson-2.1.jar" size="180110" download="eager" />
+    <jar href="lib\guava-jdk5-17.0-sources.jar" size="1225484" download="eager" />
+    <jar href="lib\guava-jdk5-17.0.jar" size="2059438" download="eager" />
+    <jar href="lib\httpclient-4.0.1-sources.jar" size="389445" download="eager" />
+    <jar href="lib\httpclient-4.0.1.jar" size="291037" download="eager" />
+    <jar href="lib\httpcore-4.0.1-sources.jar" size="291844" download="eager" />
+    <jar href="lib\httpcore-4.0.1.jar" size="172888" download="eager" />
+    <jar href="lib\jackson-core-2.1.3-sources.jar" size="218774" download="eager" />
+    <jar href="lib\jackson-core-2.1.3.jar" size="206797" download="eager" />
+    <jar href="lib\jackson-core-asl-1.9.11-sources.jar" size="240282" download="eager" />
+    <jar href="lib\jackson-core-asl-1.9.11.jar" size="232131" download="eager" />
+    <jar href="lib\javax.mail-1.5.5.jar" size="603571" download="eager" />
+    <jar href="lib\jdo2-api-2.3-eb-sources.jar" size="283945" download="eager" />
+    <jar href="lib\jdo2-api-2.3-eb.jar" size="192696" download="eager" />
+    <jar href="lib\jetty-6.1.26-sources.jar" size="395643" download="eager" />
+    <jar href="lib\jetty-6.1.26.jar" size="539912" download="eager" />
+    <jar href="lib\jetty-util-6.1.26-sources.jar" size="123338" download="eager" />
+    <jar href="lib\jetty-util-6.1.26.jar" size="177131" download="eager" />
+    <jar href="lib\jsr305-1.3.9.jar" size="33015" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.38-bin.jar" size="983914" download="eager" />
+    <jar href="lib\protobuf-java-2.4.1-sources.jar" size="200142" download="eager" />
+    <jar href="lib\protobuf-java-2.4.1.jar" size="450279" download="eager" />
+    <jar href="lib\transaction-api-1.1-sources.jar" size="25014" download="eager" />
+    <jar href="lib\transaction-api-1.1.jar" size="15071" download="eager" />
+    <jar href="lib\xpp3-1.1.4c-sources.jar" size="128334" download="eager" />
+    <jar href="lib\xpp3-1.1.4c.jar" size="120069" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="GmailClientFX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="gmailclientfx.GmailClientFX"  name="GmailClientFX" />
+  <update check="always"/>
+</jnlp>

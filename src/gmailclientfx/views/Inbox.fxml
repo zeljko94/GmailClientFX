@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="inboxGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="734.0" stylesheets="@inbox.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gmailclientfx.controllers.InboxController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="604.0" minHeight="10.0" prefHeight="318.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="313.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="inboxTable" prefHeight="97.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="stupacId" prefWidth="61.0" text="Id" />
+            <TableColumn fx:id="stupacOznaci" prefWidth="66.0" text="Oznaci" />
+          <TableColumn fx:id="stupacNaslov" prefWidth="296.0" text="Naslov" />
+            <TableColumn fx:id="stupacPosiljatelj" prefWidth="157.0" text="Posiljatelj" />
+            <TableColumn fx:id="stupacDatum" prefWidth="153.0" text="Datum" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnObrisiOznacene" mnemonicParsing="false" text="Obrisi oznacene" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="pregledEmailaGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="938.0" styleClass="background" stylesheets="@pregledemaila.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gmailclientfx.controllers.PregledEmailaController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="596.0" minWidth="10.0" prefWidth="126.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1186.0" minWidth="10.0" prefWidth="798.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1139.0" minWidth="10.0" prefWidth="110.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="337.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="368.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="605.0" minHeight="10.0" prefHeight="355.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="605.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="605.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lblFrom" stylesheets="@pregledemaila.css" text="From:" />
+      <Label fx:id="lblTo" text="To:" GridPane.rowIndex="1" />
+      <Label fx:id="lblNaslov" text="Naslov:" GridPane.rowIndex="2" />
+      <Label fx:id="lblDatumText" text="Datum:" GridPane.rowIndex="5" />
+      <TextField fx:id="txtFrom" styleClass="text-input" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+      <TextField fx:id="txtNaslov" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <TextField fx:id="txtTo" styleClass="text-input" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <HBox fx:id="HBoxFooter" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <Label fx:id="lblDatum" prefHeight="38.0" prefWidth="330.0" />
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Region prefHeight="18.0" prefWidth="90.0" />
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="4">
+         <children>
+            <Region prefHeight="57.0" prefWidth="153.0" />
+            <Button fx:id="btnObrisi" mnemonicParsing="false" text="Obrisi">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+            <Region prefHeight="57.0" prefWidth="144.0" />
+            <Button fx:id="btnOdgovori" mnemonicParsing="false" text="Odgovori">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+            <Region prefHeight="57.0" prefWidth="143.0" />
+            <Button fx:id="btnProslijedi" mnemonicParsing="false" text="Proslijedi">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <WebView fx:id="bodyWebView" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="obrisaneGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gmailclientfx.controllers.ObrisaneController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="544.0" minHeight="10.0" prefHeight="287.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="289.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="obrisaneTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="stupacId" prefWidth="66.0" text="Id" />
+          <TableColumn fx:id="stupacOznaci" minWidth="0.0" prefWidth="68.0" text="Oznaci" />
+            <TableColumn fx:id="stupacNaslov" prefWidth="223.0" text="Naslov" />
+            <TableColumn fx:id="stupacFrom" prefWidth="264.0" text="From" />
+            <TableColumn fx:id="stupacDatum" prefWidth="183.0" text="Datum" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBrisiOznacene" mnemonicParsing="false" text="Obrisi oznacene" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>

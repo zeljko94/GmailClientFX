@@ -1,0 +1,56 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.background {
+    -fx-background-color: #03A9F4;
+}
+
+.menuBar
+{
+    -fx-background-color: #0288D1;
+}
+.menuBar .label
+{
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-item:hover
+{
+    -fx-background-color: #B3E5FC;
+}
+
+.leftMenu
+{
+    -fx-background-color: black, #03A9F4;
+    /*-fx-background-insets: 0, 1 1 1 1;*/
+}
+
+.leftMenuLabel
+{
+    -fx-background-color: #03A9F4;
+    -fx-font-size: 25px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 10 25 10 25;
+}
+
+.leftMenuLabel:hover
+{
+    -fx-background-color: #B3E5FC;
+    -fx-font-size: 30px;
+    -fx-font-color: #FFFFFF;
+}
+
+.footer
+{
+    -fx-background-color: #0288D1;
+}
+
+.separator .line
+{
+    -fx-background-color: #0288D1;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #0288D1;
+}

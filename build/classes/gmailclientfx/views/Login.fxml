@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="loginGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="207.0" prefWidth="504.0" styleClass="background" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gmailclientfx.controllers.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="177.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="423.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="308.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="311.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="311.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2">
+         <children>
+            <Region prefHeight="68.0" prefWidth="77.0" />
+            <Label fx:id="lblLogo" prefHeight="68.0" prefWidth="393.0" styleClass="lblLogo" text="Login using Gmail!" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="lblEmail" prefHeight="43.0" prefWidth="74.0" text="Email:">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" prefHeight="39.0" prefWidth="406.0" promptText="example@gmail.com" text="zeljkokrnjic94@gmail.com" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <children>
+            <Region prefHeight="57.0" prefWidth="24.0" />
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLogin_click" prefHeight="46.0" prefWidth="120.0" text="Login" />
+         </children>
+      </HBox>
+      <Label fx:id="lblStatusMsg" prefHeight="27.0" prefWidth="556.0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

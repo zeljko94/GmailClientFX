@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="homeGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="1000.0" styleClass="background" stylesheets="@home.css" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gmailclientfx.controllers.HomeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="543.0" minWidth="10.0" prefWidth="247.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1120.0" minWidth="10.0" prefWidth="753.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="817.0" minHeight="10.0" prefHeight="449.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="817.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <MenuBar fx:id="homeMenuBar" prefHeight="5.0" prefWidth="1000.0" styleClass="menuBar" GridPane.columnSpan="2">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menu-item" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox prefHeight="759.0" prefWidth="252.0" styleClass="leftMenu" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="32.0" prefWidth="247.0" />
+            <Label fx:id="lblNova" onMouseClicked="#lblNova_click" prefHeight="65.0" prefWidth="305.0" styleClass="leftMenuLabel" text="Nova poruka">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblInbox" layoutX="10.0" layoutY="210.0" onMouseClicked="#lblInbox_click" prefHeight="65.0" prefWidth="309.0" styleClass="leftMenuLabel" text="Inbox">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblPoslane" layoutX="10.0" layoutY="274.0" onMouseClicked="#lblPoslane_click" prefHeight="65.0" prefWidth="309.0" styleClass="leftMenuLabel" text="Poslane">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblNedovrsene" layoutX="10.0" layoutY="338.0" onMouseClicked="#lblNedovrsene_click" prefHeight="65.0" prefWidth="316.0" styleClass="leftMenuLabel" text="Nedovršene">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblObrisane" layoutX="10.0" layoutY="402.0" onMouseClicked="#lblObrisane_click" prefHeight="65.0" prefWidth="309.0" styleClass="leftMenuLabel" text="Obrisane">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblSpam" layoutX="10.0" layoutY="466.0" onMouseClicked="#lblSpam_click" prefHeight="65.0" prefWidth="318.0" styleClass="leftMenuLabel" text="Spam">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <HBox fx:id="footer" prefHeight="100.0" prefWidth="200.0" styleClass="footer" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <Separator fx:id="separator1" orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <VBox prefHeight="534.0" prefWidth="753.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="100.0" top="100.0" />
+         </GridPane.margin></VBox>
+   </children>
+</GridPane>
